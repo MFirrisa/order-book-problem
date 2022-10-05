@@ -39,7 +39,7 @@ for order in new_book:
 
 #Before I write the main function, I define a function which takes in a list
 #of tuples and an integer. In the context of this problem, when called, it will
-#return the resulting expense, or income, based on a specified number of shares. 
+#return the resulting expense, or income, based on a specified number of target shares. 
 
 
 def income_expense(list_of_price_and_size,target_size):
@@ -55,11 +55,11 @@ def income_expense(list_of_price_and_size,target_size):
 #The function I'll define below is the meat of the problem.    
 
 def pricer(target_size):
-    #There are two main tasks we have, as we read through each order, we want
-    # to let our client know what their income, or expense, will be based on
+    #This function will perform the following: while going through each order, the
+    #client will be continuously informed what their income, or expense, will be based on
     #whether they are selling, or buying, a set number of shares. To make this
-    #task easier, we will create separate lists for 'sell' orders and 'buy'
-    #orders. We will also update both lists as necessary when we receive a
+    #task easier, I will create separate lists for 'sell' orders and 'buy'
+    #orders. The lists will be updated as necessary when there is a
     #reduce order.
     
     expense=[]
@@ -102,10 +102,10 @@ def pricer(target_size):
         #buy/sell. In order to call the income_expense function successfully,
         #I will create two separate lists of tuples (first entry being the
         #price per share, the second being the total number of shares offered)
-        #based on the newly created 'buy' and 'sell' lists. Further, since I
+        #based on the newly created 'buy' and 'sell' lists. Further, since the client will
         #want to sell at the highest price possible, and buy at the lowest,
         #I will order the lists of tuples according to the values of the first
-        #tuple entries. 
+        #entries. 
                 
         expense_sorted=[]
         income_sorted=[]
@@ -121,7 +121,7 @@ def pricer(target_size):
         
         #I am now ready to calculate the correct output based on the 
         #client's desired number of shares as each new order comes in. On a 
-        #technical note, we need to take into account that an output should 
+        #technical note, I'll need to take into account that an output should 
         #only be generated if a newly received order changes the previous 
         #output.
         
