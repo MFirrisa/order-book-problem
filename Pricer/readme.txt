@@ -1,8 +1,17 @@
-The main file containing the solution code is pricer.py. The test.py file is where I tested out some of my codes. Lastly, pricer.txt is the data file. The statement of the problem we solve can be found here:
+This is my solution for a problem once posed to job applicants by RGM Advisors, a now defunct trading firm. 
+The premise of the problem is to write a code which informs clients how much income (or expense)
+they would have should they sell (or buy) a specified number of shares in a given stock. Further, the 
+client needs to be updated continuously as new data comes in regarding their potential income/expense. A
+full description of the problem can be found here:
 
 https://web.archive.org/web/20141023152658/http://www.rgmadvisors.com/problems/orderbook/
 
-Warning: The example given on the website as a comparison test is inconsistent with the data file given. For example, according to the website, the first 20 entries are as follows:
+The file containing the solution code is pricer.py. The test.py file is where I tested out some of my codes
+before implementing them in pricer.py. The data used for this problem can be found in pricer.txt.
+
+Lastly, the example given on the website as a comparison test is inconsistent with the data file given to download. 
+
+For example, according to the website's example, the first 20 entries are as follows:
 
 28800538 A b S 44.26 100
 28800562 A c B 44.10 100
@@ -25,7 +34,7 @@ Warning: The example given on the website as a comparison test is inconsistent w
 28815937 R j 1000
 28816245 A m S 44.22 100
 
-However, for the data provided for download, the first 20 entries are as follows:
+However, from the data provided for download, the first 20 entries are as follows:
 
 28800538 A b S 44.26 100
 28800562 A c B 44.10 100
@@ -48,4 +57,4 @@ However, for the data provided for download, the first 20 entries are as follows
 28816244 R l 100
 28816245 A m S 44.22 100
 
-I have modified the data provided in this file to be consistent with the example given on the website. 
+I have modified the data in pricer.txt to be consistent with the example given on the website. 
