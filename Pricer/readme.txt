@@ -1,7 +1,7 @@
-This is my solution for a problem once posed to job applicants by RGM Advisors, a now defunct trading firm. 
-The premise of the problem is to write a code which informs clients how much income (or expense)
-they would have should they sell (or buy) a specified number of shares in a given stock. Further, the 
-client needs to be updated continuously as new data comes in regarding their potential income/expense. A
+This is my solution for a problem posed to job applicants by RGM Advisors, a now defunct trading firm. 
+The premise of the problem is to write a code which informs clients——once there are enough orders for a given stock
+matching their desired number of shares——how much income, or expense, they would have should they buy, or sell, shares. 
+Further, the client needs to be updated continuously as new orders come in regarding their potential income/expense. A
 full description of the problem can be found here:
 
 https://web.archive.org/web/20141023152658/http://www.rgmadvisors.com/problems/orderbook/
